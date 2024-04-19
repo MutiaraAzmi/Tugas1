@@ -1,0 +1,134 @@
+:root{
+    --primary: #280d2c;
+    --bg: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color:#ffffff;
+
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 30px 400px ;
+
+}
+
+.navbar .navbar-nav a {
+   color: #ffffff;
+   display: inline-block;
+   font-size: 1.4rem;
+   margin: 0 1rem;
+   
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-extra a {
+  color: #ffffff;
+  margin: 0 0.5rem;
+  padding: 0;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+    
+}
+
+/* Media Queries */
+
+/* Laptop */
+@media (max-width: 1366px){
+    html {
+        font-size: 75%;
+    }
+}
+/* Tablet */
+@media (max-width: 768px){
+    html {
+        font-size: 62.5%;
+    }
+}
+/* Mobile Phone */
+@media (max-width: 450px){
+    html {
+        font-size: 55%;
+    }
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../IMG/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .content {
+    padding: 1,4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: #ffffff;
+    text-align: center;
+    left: 45%;
+    position: relative;
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 50;
+    text-align: center;
+    left: 45%;
+    position: relative;
+}
+
+.hero .content .cta {
+    color: #ffffff;
+    text-align: center;
+    margin: 20% 10%;
+    border-radius: 25px;
+    font-weight: bolder;
+    border: 2px solid #ffffff;
+    background: #000000;
+    margin-top: 100px;
+    font-size: 25px;
+    text-transform: uppercase;
+    position: center;
+    left: 40%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 40px 10px 40px;
+    margin: 20px 10px;
+    
+}
